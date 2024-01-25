@@ -1,0 +1,578 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body , html {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+    
+ }
+.main {
+    overflow-x: hidden;
+    height: inherit;
+}
+ :root {
+    --primary-color : #276EA2;
+    --seconday-color : #71AC4D;
+    --white-color : #FFFFFF;
+    --black-color : #000;
+ }
+ .top-nav {
+    height: 30px;
+    background-color: var(--black-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+ }
+.top-nav-main button {
+    width: 140px;
+    border: none;
+    background-color: var(--seconday-color);
+    color: var(--white-color);
+    font-family: "roboto";
+    font-size: 14px;
+    height: 100%;
+    font-weight: 800;
+    position: relative;
+}
+.top-nav-main li {
+    font-size: 13px;
+}
+.nav-2-links a i {
+    font-size: 18px;
+}
+.navabr-2 {
+   height: 155px;
+   margin-top: 30px;
+   background-color: var(--white-color);
+}
+.nav-2-links a {
+    font-size: 13px;
+    color: var(--black-color);
+    font-family: "roboto";
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+.one {
+    height: 50%;
+    border-bottom: 1px solid #dadada;
+}
+.box {
+    width: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.box img {
+    height: 40px;
+} 
+.box p {
+    line-height: 13px;
+    font-size: 14px;
+}
+.hoverBox {
+    width: 170px;
+    background-color: var(--white-color);
+    list-style: none;
+    position: absolute;
+    top: 13%;
+    right: 34%;
+}
+.for-company  {
+    display: none;
+}
+.for-work {
+    display: none;
+    right: 27%;
+}
+.for-industry {
+    display: none;
+    right: 20%;
+}
+.hoverBox li {
+    margin-top:5px;
+}
+.hoverBox li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--black-color);
+    font-weight: 600;
+}
+.toggleBar {
+    background-color: var(--primary-color);
+    left: -100%;
+    transition: 0.3s ease-in;
+}
+.toggleBar ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.toggleBar ul li:nth-child(1) {
+    text-transform: uppercase;
+}
+.toggleBar ul li i {
+   color: #fff;
+   font-size: 30px;
+}
+.toggleBar ul li a {
+    font-weight:lighter;
+
+}
+#close {
+    font-size: 50px;
+}
+/* all pages  */
+.page1 {
+    height: 60vh;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.page1::-webkit-scrollbar {
+    display: none;
+}
+.pages * {
+    scroll-snap-align: center;
+}
+.scroll-1 {
+    background-image: url("https://www.techmagnate.com/files/2021/09/home-page-digital-card-banner-2023.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.scroll-2 {
+    background-image: url("https://www.techmagnate.com/files/2023/01/homepage-banner-new.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.page-2 {
+    min-height: 100vh;
+}
+.page2-title h1 {
+    font-size: 25px;
+    margin-top: 50px;
+    color: var(--primary-color);
+}
+.serviceBox {
+    height: 300px;
+    margin: 30px 0px;
+}
+.sectionBtn {
+    height: 40px;
+    width: 200px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+.page-3 {
+   min-height: 100vh;
+    background-color: var(--white-color);
+}
+.page3-title h1 {
+    font-weight: 400;
+}
+.topics li {
+    height: 90px;
+}
+.topics .col-12 .col-2 i {
+    font-size: 45px;
+    color: var(--primary-color);
+}
+.topics .col-12 .col-10 a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.whatsapp-call {
+    width: 100%;
+    height: 60px;
+    background-color: var(--white-color);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    display: none;
+    z-index: 999;
+}
+.whatsapp-call button {
+    height: 100%;
+    width: 47%;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "roboto";
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+.whatsapp-call button:nth-child(1) {
+    background-color: var(--primary-color);
+}
+.whatsapp-call button:nth-child(2) {
+    background-color: var(--seconday-color);
+}
+.page-4 {
+    min-height: 80vh;
+}
+.page-4 .topics li {
+    height: 55px;
+}
+.page-4-semi  {
+    height: 35vh;
+}
+.brand-logos img {
+    height: 110px;
+}
+.brand-logos {
+    overflow-x: scroll;
+}
+.brand-logos::-webkit-scrollbar {
+    display: none;
+}
+.page-5 {
+    min-height: 100vh;
+}
+.zoomBox {
+    height: 350px;
+    position: relative;
+    transition: 0.2s ease-in-out;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    border: 1px solid #dadada;
+}
+.zoomBox * {
+    z-index: 99;
+    font-size: 25px;
+    font-family: "roboto";
+    text-align: center;
+}
+.zoomBox i {
+    font-size: 45px;
+}
+.zoomBox::after {
+    height: 100%;
+    width: 100%;
+    background-color: #000000a4;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+}
+.zoomBox:nth-child(1) {
+    background-image: url("https://www.techmagnate.com/alpha/images/Search-Engine-Optimization-home.jpg");
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+.zoomBox:nth-child(2) {
+    background-image: url("https://www.techmagnate.com/alpha/images/Website-Designing-and-Development.jpg");
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+.zoomBox:nth-child(3) {
+    background-image: url("https://www.techmagnate.com/alpha/images/Pay-Per-Click.jpg");
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+.zoomBox:nth-child(4) {
+    background-image: url("https://www.techmagnate.com/alpha/images/Social-Media-Marketing.jpg");
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+.zoomBox:nth-child(5) {
+    background-image: url("https://www.techmagnate.com/alpha/images/Online-Reputation-Management-N.jpg");
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+.zoomBox:nth-child(6) {
+    background-image: url("https://www.techmagnate.com/alpha/images/app-store-optimization.jpg");
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+.page-5 .zoomBox:hover {
+    background-size: 130%;
+}
+.page-6 {
+    min-height: 70vh;
+}
+.page-6 .row .col-12 p {
+    font-size: 35px;
+    font-weight: 200;
+}
+.page-6 .row .col-12 i {
+    font-size: 15px;
+    font-weight: 600;
+}
+.page-6  .row  .col-12 .author {
+    font-size: 17px;
+    font-family: "roboto";
+    color: #3d3d3d;
+}
+.page6-btn {
+    height: 40px;
+    width: 140px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.page6-img .col-3 {
+    min-height: 50%;
+}
+.page6-img .col-3 {
+    padding: 0px;
+}
+.page6-img img {
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #cccccc;
+    padding: 20px;
+}
+
+.page-7 {
+    min-height: 65vh;
+    background-color: #f6F6F6;
+}
+.page7-img .col-6 {
+    margin: 10px;
+}
+.page7-img .col-6 img {
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+.mobile-view {
+    background-color: var(--seconday-color);
+}
+.page7-right .col-12 {
+    height: 110px;
+    margin: 2px 0px;
+    background-color: var(--seconday-color);
+}
+.page-8 {
+    min-height: 100vh;
+    background-color: #fff;
+}
+.page8-video {
+    display: flex;
+}
+iframe {
+    height: 450px;
+    width: 90%;
+}
+
+.tajmahal-img {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index:-9;
+    background-image: url("https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+}
+.blank-page-9 {
+    min-height: 100vh;
+    background-color: #0000008c;
+}
+
+input[type="text"] {
+    height: 50px;
+    width: 80%;
+    background-color: #ffffff96;
+    border: none;
+    margin: 5px 0px;
+}
+.email-phone  {
+    width: 80%;
+    display: flex;
+}
+.email-phone input[type="email"], input[type="number"] {
+    height: 50px;
+    width: 50%;
+    background-color: #ffffff96;
+    border: none;
+    margin: 5px 0px;
+}
+.selects {
+    width: 80%;
+}
+.selects select {
+    height: 50px;
+    width: 50%;
+    background-color:#ffffff96 ;
+    margin: 5px 0px;
+}
+.form textarea {
+    height: 140px;
+    margin-top: 5px;
+    width: 80%;
+    border: none;
+    background-color:#ffffff96 ;
+}
+.form button {
+    height: 50px;
+    width: 80%;
+    background-color: var(--seconday-color);
+    border: none;
+    margin-top: 10px;
+}
+.footer-main {
+    height: 50vh;
+    color: #e0e0e0;
+    font-weight: lighter;
+}
+.footerPara {
+    font-size: 15px;
+}
+.footrCompanyDtls {
+    height: 100%;
+}
+.footrCompanyLinks .links .row .col-12 a {
+    color: var(--white-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* media query start  */
+
+ @media (max-width:500px) {
+    .top-nav-main button {
+        width: 100px;
+        font-size: 10px;
+        position: absolute;
+        font-weight: lighter;
+    }
+    .top-nav-main li {
+        font-size: 18px;
+        border: 1px solid var(--white-color);
+        padding: 0px 10px;
+        border-bottom: none;
+        border-top: none;
+    }
+    .logo img {
+        height: 40px;
+    }
+    .menu i {
+        font-size: 40px;
+        color: var(--primary-color);
+    }
+    .navabr-2 {
+        height: 65px;
+        margin-top: 30px;
+     }
+     .one {
+        height: 100%;
+     }
+     /* .scroll-1 {
+        background-size: contain;
+        background-repeat: no-repeat;
+    } */
+    .page-3 {
+        background-color: var(--seconday-color);
+    }
+    .page3-title h1 {
+        font-weight: 600;
+        font-size: 25px;
+        color: var(--white-color);
+    }
+    .topics li {
+        height: 140px;
+    }
+    .whatsapp-call {
+        display: flex;
+    }
+    .page-4 h1 {
+        color:var(--black-color);
+    }
+    .page-4 .topics li {
+        height: 80px;
+    }
+    .zoomBox {
+        height: 170px;
+    }
+ 
+    .page6-img img {
+        width: 80%;
+    }
+    .page7-left {
+        height: 45%;
+    }
+    .page7-main {
+        flex-direction: column;
+    }   
+    .page8-video {
+        flex-direction: column;
+    }
+    iframe {
+        height: 370px;
+        width: 100%;
+    }
+    .form {
+        flex-direction: column;
+    }
+    .blank-page-9 {
+        height: 125vh;
+        background-color: #0000008c;
+    }
+    .formBox {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer-main {
+        height: 100vh;
+    }
+    .footrCompanyDtls {
+        height: 35%;
+    }
+    .footrCompanyLinks {
+        min-height: 65%;
+    }
+   .footrCompanyLinks .links .row .col-12 {
+    height: 45px;
+    overflow: hidden;
+    transition: 0.3s;
+    padding: 20px;
+    border: 1px solid var(--white-color);
+    margin-top: 20px;
+   }
+  
+ }
